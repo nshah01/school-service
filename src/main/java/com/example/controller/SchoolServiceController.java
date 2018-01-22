@@ -18,5 +18,11 @@ public class SchoolServiceController {
 	 System.out.println("Going to call student service to get data!");
 	 return studentServiceDelegate.getStudentServiceData(firstname);
 	}
+	
+	@RequestMapping(value = "/test")
+	public String test() {
+		return "TEST";
+	}
+
 
 }
